@@ -3,3 +3,186 @@ body {
     background-color: #00246B;
     color: #FCF6F5;
 }
+
+h1 {
+    font-size: 3rem; 
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem; 
+}
+
+h3 {
+    font-size: 1.8rem; 
+}
+
+h4 {
+    font-size: 1.3rem; 
+}
+
+ul {
+    font-size: 1.1rem; 
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+hr {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-top: 2px solid #FCF6F5;
+}
+
+
+/* Header Section */
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 20px 90px 20px 30px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-details h1,
+.profile-details h2,
+.profile-details ul {
+    margin: 0; 
+}
+
+/* About Me */
+.about-section {
+    line-height: 1.6; 
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Work Experience */
+.workex {
+    line-height: 1.6; 
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.wxdetails {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.details {
+    border: 1px solid #FCF6F5; 
+    border-radius: 30px;
+    padding: 20px; 
+    width: 26%;
+}
+
+.details:hover {
+    transform: scale(1.05); 
+}
+
+/* Education */
+.education {
+    line-height: 1.6; 
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.educontain {
+    display: flex;
+    justify-content: space-around;
+}
+
+.edudetails {
+    border: 1px solid #FCF6F5; 
+    border-radius: 30px;
+    padding: 20px; 
+    width: 25%;
+}
+
+.edudetails:hover {
+    transform: scale(1.05); 
+}
+
+/* Skill */
+.skill {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.skcontain {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skdetails {
+    border: 1px solid #FCF6F5; 
+    border-radius: 30px;
+    padding: 20px;
+    width: auto;
+}
+
+.skdetails:hover {
+    transform: scale(1.05); 
+}
+
+/* Language */
+.language {
+    line-height: 1.6; 
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.lgcontain {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.lgdeatils {
+    border: 1px solid #FCF6F5; 
+    text-align: center;
+    border-radius: 30px;
+    padding: 20px;
+    width: auto;
+}
+
+.lgdeatils:hover {
+    transform: scale(1.05); 
+}
+
+/* Contact */
+.contactContain {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    border: 1px solid #FCF6F5; 
+    text-align: center;
+    border-radius: 30px;
+    padding: 20px;
+    width: auto;
+}
+
+.contact:hover {
+    transform: scale(1.05); 
+}
+
+.contact img {
+    margin-right: 10px;
+}
