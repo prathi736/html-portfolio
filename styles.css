@@ -62,6 +62,11 @@ hr {
     margin: 0; 
 }
 
+.profile-container {
+    padding: 0;
+    margin-left: 20px;
+}
+
 /* About Me */
 .about-section {
     line-height: 1.6; 
@@ -124,6 +129,7 @@ hr {
 
 .skcontain {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -151,7 +157,7 @@ hr {
     list-style-type: none;
 }
 
-.lgdeatils {
+.lgdetails {
     border: 1px solid #FCF6F5; 
     text-align: center;
     border-radius: 30px;
@@ -159,11 +165,17 @@ hr {
     width: auto;
 }
 
-.lgdeatils:hover {
+.lgdetails:hover {
     transform: scale(1.05); 
 }
 
 /* Contact */
+.contactSec {
+    line-height: 1.6; 
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .contactContain {
     display: flex;
     justify-content: space-around;
@@ -185,4 +197,74 @@ hr {
 
 .contact img {
     margin-right: 10px;
+}
+
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: center; /* Center elements horizontally */
+    }
+    
+    .image {
+        margin: 20px 0; /* Adjust margin for spacing */
+    }
+
+    .profile {
+        margin-left: 20px;
+    }
+    
+    .profile-details {
+        text-align: center; /* Center text on small screens */
+    }
+
+    .contactContain,
+    .lgcontain,
+    .skcontain,
+    .educontain,
+    .wxdetails {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    /* Adjust margins for sections */
+    .about-section,
+    .workex,
+    .education,
+    .skill,
+    .language,
+    .contactSec {
+        margin-left: 30px; /* Adjust margin for spacing */
+        margin-right: 30px;
+    }
+    
+    /* Adjust width of detail sections */
+    .details,
+    .edudetails,
+    .skdetails,
+    .contact,
+    .lgdetails {
+        width: 90%; /* Take up full width on small screens */
+        margin-bottom: 20px;
+    }
+
+    .skdetails {
+        width: auto;
+        display: flex; /* Set as flex container */
+        align-items: center; /* Center items vertically */
+        /* justify-content: center; */
+    }
+
+    .lgdetails {
+        margin-bottom: 30px ;
+        border-radius: 20px;
+    }
+
+    .contact {
+        display: flex; 
+        justify-content: center;
+    }
+
 }
